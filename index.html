@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/34b642be94.js" crossorigin="anonymous"></script>
+
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <section class="container">
+
+        <header class="title">
+            <h1>Lista de Tarefas</h1>
+        </header>
+
+        <form id="todo-form">
+            <p>Adicione sua tarefa</p>
+            <section class="form-control">
+                <input type="text" id="todo-input" placeholder="Oque você vai fazer?">
+                <button class="btn-add" type="submit" id="send">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </section>
+        </form>
+
+        <form id="edit-form" class="hide">
+            <p>Edite sua tarefa</p>
+            <section class="form-control">
+                <input type="text" id="edit-input" />
+                <button class="btn-edit" type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </section>
+            <button class="btn-cancel" id="cancel-edit-btn">Cancelar</button>
+        </form>
+
+        <!-- Futuras melhorias
+        <section id="toolbar">
+
+            <section id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input class="search-input" type="text" id="search-input" placeholder="Buscar...">
+                    <button class="btn-eraser" id="erase-button" onclick="pesquisar()">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </section>
+
+            <section id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </section>
+        </section> -->
+
+        <section id="todo-list">
+
+        </section>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
